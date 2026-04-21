@@ -9,6 +9,7 @@ html {
 
 body {
     background: white;
+    height: 10000px;
 }
 
 textarea,
@@ -87,6 +88,7 @@ a {
 }
 
 /* ---------------------------- Header ----------------------- */
+/* Header top */
 .header__top {
     padding: 42px 0 12px;
     display: flex;
@@ -152,4 +154,369 @@ a {
 .sign-up {
     max-width: 113px;
     --btn-height: 52px;
+}
+
+/* ----------------------------- Hero -------------------------- */
+/* Hero content */
+.hero {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__heading {
+    width: 500px;
+    margin-top: 12px;
+}
+
+.hero__heading--strong {
+    color: #7264d6;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 540px;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form-email {
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-input {
+    height: inherit;
+    width: 90%;
+    padding: 23px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    border: none;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-submit {
+    background: #7264d6;
+    border: none;
+    outline: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.form-desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+/* Hero media */
+.hero__media {
+    position: relative;
+    display: flex;
+}
+
+/* Mobile */
+.mobile {
+    width: 296px;
+    height: 562px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    position: relative;
+    z-index: 2;
+    padding: 52px 11px 30px;
+}
+
+.mobile__top {
+    position: absolute;
+    width: 144px;
+    height: 36px;
+    border-radius: 0 0 18px 18px;
+    background: #3c2f60;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.debit-card {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    padding: 16px;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+}
+
+.debit-card::before {
+    content: url(../icon/debit-card-decor-1.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.debit-card::after {
+    content: url(../icon/debit-card-decor-2.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.debit-card__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.debit-card__label {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.debit-card__balance {
+    margin-top: 2px;
+    display: block;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.debit-card__info {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+}
+
+.debit-card__valid-thur,
+.debit-card__holder {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.debit-card__valid-date,
+.debit-card__name {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mobile__row {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile__title {
+    color: #31456a;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mobile__filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.mobile__filter-icon {
+    border-radius: 26px;
+    height: 2px;
+    background: #31456a;
+}
+
+.mobile__filter-icon--long {
+    width: 14px;
+}
+
+.mobile__filter-icon--medium {
+    width: 8px;
+}
+
+.mobile__filter-icon--short {
+    width: 4px;
+}
+
+.mobile__transaction {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.mobile__notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile__icon-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(74, 181, 227, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile__notification:nth-child(2) .mobile__icon-wrap {
+    background: rgb(218, 100, 100, 0.1);
+}
+
+.mobile__notification:nth-child(3) .mobile__icon-wrap {
+    background: rgb(67, 159, 144, 0.1);
+}
+
+.mobile__notification:nth-child(4) .mobile__icon-wrap {
+    background: rgb(114, 100, 214, 0.1);
+}
+
+.mobile__notification-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.mobile__trans-title,
+.mobile__fluctuation {
+    color: #212832;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.mobile__trans-email,
+.mobile__trans-date {
+    color: #696d76;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.mobile__trans-date {
+    text-align: right;
+}
+
+.mobile__trans-date,
+.mobile__trans-email {
+    margin-top: 6px;
+}
+
+.hero__media-interest {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 44px;
+    margin-top: 127px;
+}
+
+.hero__media-interest-content {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero__media-percentage {
+    display: block;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero__media-deposit {
+    display: flex;
+    z-index: 4;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    padding: 10px;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero__media-depo-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero__media-depo-text {
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__media-money {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero__media-secured {
+    width: 124px;
+    border-radius: 10px;
+    background: #439f90;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    position: absolute;
+    bottom: 61px;
+    right: 100px;
+    z-index: 3;
+}
+
+.hero__media-secured-money {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__media-secured-label {
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
 }
