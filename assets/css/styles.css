@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.body {
+    background: white;
+}
+
+textarea,
+input,
+button {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
