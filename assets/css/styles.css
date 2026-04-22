@@ -196,7 +196,7 @@ a {
     height: inherit;
     width: 90%;
     padding: 23px;
-    color: #696d76;
+    color: var(--content-color);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -217,7 +217,7 @@ a {
 
 .form-desc {
     margin-top: 20px;
-    color: #696d76;
+    color: var(--content-color);
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.71;
@@ -412,7 +412,7 @@ a {
 
 .mobile__trans-email,
 .mobile__trans-date {
-    color: #696d76;
+    color: var(--content-color);
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -633,7 +633,7 @@ a {
 
 .feautre__success-desc {
     display: block;
-    color: #696d76;
+    color: var(--content-color);
     font-family: Inter;
     font-size: 1.2rem;
     font-style: normal;
@@ -665,7 +665,7 @@ a {
     margin-top: 16px;
     width: 470px;
     font-size: 1.6rem;
-    color: #696d76;
+    color: var(--content-color);
     font-style: normal;
     font-weight: 400;
     line-height: 1.75;
@@ -814,7 +814,7 @@ a {
 .payment__send-type,
 .payment__send-date {
     display: block;
-    color: #696d76;
+    color: var(--content-color);
     font-family: Inter;
     font-size: 1rem;
     font-weight: 400;
@@ -1055,8 +1055,8 @@ a {
     width: 570px;
     padding: 42px 28px;
     position: relative;
-    filter: drop-shadow(0 0 1px #696d76);
-    margin-bottom: 80px;
+    filter: drop-shadow(0 0 1px var(--content-color));
+    margin-bottom: 40px;
 }
 
 .testimonial__box-chat::after {
@@ -1064,14 +1064,15 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -160px;
-    border: 80px solid;
+    bottom: -100px;
+    border: 60px solid;
     border-color: white transparent transparent;
+    border-radius: 10px;
 }
 
 .testimonial__box-text {
     background: transparent;
-    color: #696d76;
+    color: var(--content-color);
     text-align: center;
     font-size: 2.2rem;
     font-style: italic;
@@ -1141,4 +1142,90 @@ a {
 .testimonial__tab:first-child {
     background: #7264d6;
     border-color: #7264d6;
+}
+
+/* ------------------------------------ Blog -------------------------------------- */
+.blog {
+    margin-top: 160px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__heading {
+    margin-top: 6px;
+}
+
+.blog__desc {
+    margin-top: 18px;
+    width: 435px;
+}
+
+.blog__btn {
+    min-width: 123px;
+}
+
+.blog__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.blog__card {
+    width: 570px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    transition:
+        border 0.3s,
+        box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.blog__card:hover {
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.07);
+    border: 1px solid white;
+}
+
+.blog__img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog__date {
+    color: var(--content-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.blog__title {
+    margin-top: 10px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.blog__more {
+    display: block;
+    color: var(--content-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62;
+    margin-top: 20px;
+    transition: color 0.5s;
+}
+
+.blog__card:hover .blog__more {
+    color: #7264d6;
 }
