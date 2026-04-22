@@ -1014,3 +1014,131 @@ a {
 .wallet__btn {
     margin-top: 36px;
 }
+
+/* --------------------------------------- Testimonial --------------------------------- */
+.testimonial {
+    margin-top: 160px;
+}
+
+.testimonial__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial__heading {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.testimonial__desc {
+    text-align: center;
+    width: 435px;
+    margin-top: 18px;
+}
+
+.testimonial__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial__box-chat {
+    background: white;
+    width: 570px;
+    padding: 42px 28px;
+    position: relative;
+    filter: drop-shadow(0 0 1px #696d76);
+    margin-bottom: 80px;
+}
+
+.testimonial__box-chat::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -160px;
+    border: 80px solid;
+    border-color: white transparent transparent;
+}
+
+.testimonial__box-text {
+    background: transparent;
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+}
+
+.testimonial__reviewer-info {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial__avt-bg {
+    width: 104px;
+    height: 104px;
+    border-radius: 52px;
+    background: #4ab5e3;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.testimonial__item:last-child .testimonial__avt-bg {
+    background: #439f90;
+}
+
+.testimonial__avt {
+    width: 100%;
+    object-fit: cover;
+}
+
+.testimonial__name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.testimonial__personal-job {
+    margin-top: 2px;
+}
+
+.testimonial__bottom {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.testimonial__tab {
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9b9fab;
+}
+
+.testimonial__tab:hover {
+    background: #7264d6;
+    border-color: #7264d6;
+}
+
+.testimonial__tab:first-child {
+    background: #7264d6;
+    border-color: #7264d6;
+}
