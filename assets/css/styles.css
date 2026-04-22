@@ -82,6 +82,11 @@ a {
     font-weight: 600;
     line-height: var(--btn-height);
     color: white;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #7264d6;
 }
 
 /* ---------------------------- Header ----------------------- */
@@ -212,6 +217,11 @@ a {
     outline: none;
     margin-right: 8px;
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-submit:hover {
+    background: #212832;
 }
 
 .form-desc {
@@ -1055,7 +1065,7 @@ a {
     padding: 42px 28px;
     position: relative;
     filter: drop-shadow(0 0 1px var(--content-color));
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     cursor: pointer;
     transition:
         filter 0.5s,
@@ -1067,10 +1077,11 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -100px;
-    border: 60px solid;
+    bottom: -69px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 70px solid #fff;
     border-color: white transparent transparent;
-    border-radius: 10px;
 }
 
 .testimonial__box-chat:hover {
@@ -1192,8 +1203,8 @@ a {
     align-items: center;
     gap: 22px;
     transition:
-        border 0.3s,
-        box-shadow 0.3s;
+        border 0.5s,
+        box-shadow 0.5s;
     cursor: pointer;
 }
 
@@ -1377,6 +1388,12 @@ a {
     --btn-height: 52px;
     background: #7264d6;
     border: 1px solid #7264d6;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.footer__form-submit:hover {
+    background: #212832;
 }
 
 .footer__bottom {
