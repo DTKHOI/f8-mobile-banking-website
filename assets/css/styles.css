@@ -1229,3 +1229,74 @@ a {
 .blog__card:hover .blog__more {
     color: #7264d6;
 }
+
+/* ----------------------------------- CTA --------------------------------------- */
+.cta {
+    margin-top: 160px;
+    border-radius: 24px;
+    background: #7264d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.cta__label {
+    color: white;
+}
+
+.cta__label::before {
+    background: white;
+}
+
+.cta__heading {
+    color: white;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.cta__desc {
+    margin-top: 18px;
+    color: white;
+    width: 435px;
+    text-align: center;
+}
+
+.cta__btn-row {
+    display: flex;
+    gap: 16px;
+}
+
+.cta__btn {
+    margin-top: 38px;
+    display: inline-block;
+    border-radius: 6px;
+    background: #fff;
+    width: 182px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta__decor {
+    position: absolute;
+}
+
+.cta > .cta__decor:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+.cta > .cta__decor:nth-of-type(2) {
+    top: 49px;
+    right: 112px;
+}
+.cta > .cta__decor:nth-of-type(3) {
+    bottom: 49px;
+    left: 166px;
+}
+.cta > .cta__decor:nth-of-type(4) {
+    bottom: 49px;
+    right: 166px;
+}
